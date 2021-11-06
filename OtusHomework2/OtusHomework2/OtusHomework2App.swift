@@ -2,7 +2,7 @@
 //  OtusHomework2App.swift
 //  OtusHomework2
 //
-//  Created by allme on 16.10.2021.
+//  Created by Daria.S on 16.10.2021.
 //
 
 import SwiftUI

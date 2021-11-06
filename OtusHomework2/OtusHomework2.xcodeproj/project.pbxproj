@@ -9,16 +9,32 @@
 /* Begin PBXBuildFile section */
 		0BA56E10271ABFE300E0B22C /* OtusHomework2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA56E0F271ABFE300E0B22C /* OtusHomework2App.swift */; };
 		0BA56E12271ABFE300E0B22C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA56E11271ABFE300E0B22C /* ContentView.swift */; };
-		0BA56E14271ABFE700E0B22C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BA56E13271ABFE700E0B22C /* Assets.xcassets */; };
 		0BA56E17271ABFE700E0B22C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BA56E16271ABFE700E0B22C /* Preview Assets.xcassets */; };
+		0BA56E25271E02A100E0B22C /* OtusHomework2UI in Frameworks */ = {isa = PBXBuildFile; productRef = 0BA56E24271E02A100E0B22C /* OtusHomework2UI */; };
+		0BA7741427328DDE00964CFF /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 0BA7741327328DDE00964CFF /* Networking */; };
+		0BA774162733279A00964CFF /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA774152733279A00964CFF /* Array+.swift */; };
+		0BA7741827332D2C00964CFF /* ArticleDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA7741727332D2C00964CFF /* ArticleDetailScreen.swift */; };
+		0BA7741B273472B900964CFF /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0BA7741A273472B900964CFF /* SDWebImageSwiftUI */; };
+		0BA7741D273474AE00964CFF /* NewsScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA7741C273474AE00964CFF /* NewsScreenViewModel.swift */; };
+		0BA7741F2735D52C00964CFF /* ArticleInfoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA7741E2735D52C00964CFF /* ArticleInfoScreen.swift */; };
+		0BA774212735DA6E00964CFF /* NewsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA774202735DA6E00964CFF /* NewsListCell.swift */; };
+		0BF66CFE2729D863007D61AC /* NewsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF66CFD2729D863007D61AC /* NewsScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0BA56E0C271ABFE300E0B22C /* OtusHomework2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OtusHomework2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BA56E0F271ABFE300E0B22C /* OtusHomework2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtusHomework2App.swift; sourceTree = "<group>"; };
 		0BA56E11271ABFE300E0B22C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		0BA56E13271ABFE700E0B22C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BA56E16271ABFE700E0B22C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0BA56E22271E021300E0B22C /* OtusHomework2UI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = OtusHomework2UI; sourceTree = "<group>"; };
+		0BA774122731D16400964CFF /* Networking */ = {isa = PBXFileReference; lastKnownFileType = text; name = Networking; path = Modules/Networking; sourceTree = SOURCE_ROOT; };
+		0BA774152733279A00964CFF /* Array+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
+		0BA7741727332D2C00964CFF /* ArticleDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailScreen.swift; sourceTree = "<group>"; };
+		0BA7741C273474AE00964CFF /* NewsScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsScreenViewModel.swift; sourceTree = "<group>"; };
+		0BA7741E2735D52C00964CFF /* ArticleInfoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleInfoScreen.swift; sourceTree = "<group>"; };
+		0BA774202735DA6E00964CFF /* NewsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListCell.swift; sourceTree = "<group>"; };
+		0BA7742427371CD500964CFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0BF66CFD2729D863007D61AC /* NewsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BA7741B273472B900964CFF /* SDWebImageSwiftUI in Frameworks */,
+				0BA7741427328DDE00964CFF /* Networking in Frameworks */,
+				0BA56E25271E02A100E0B22C /* OtusHomework2UI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +54,10 @@
 		0BA56E03271ABFE300E0B22C = {
 			isa = PBXGroup;
 			children = (
+				0BA56E22271E021300E0B22C /* OtusHomework2UI */,
 				0BA56E0E271ABFE300E0B22C /* OtusHomework2 */,
 				0BA56E0D271ABFE300E0B22C /* Products */,
+				0BA56E23271E02A100E0B22C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,9 +72,16 @@
 		0BA56E0E271ABFE300E0B22C /* OtusHomework2 */ = {
 			isa = PBXGroup;
 			children = (
+				0BA7742427371CD500964CFF /* Assets.xcassets */,
+				0BA774122731D16400964CFF /* Networking */,
 				0BA56E0F271ABFE300E0B22C /* OtusHomework2App.swift */,
 				0BA56E11271ABFE300E0B22C /* ContentView.swift */,
-				0BA56E13271ABFE700E0B22C /* Assets.xcassets */,
+				0BF66CFD2729D863007D61AC /* NewsScreen.swift */,
+				0BA7741C273474AE00964CFF /* NewsScreenViewModel.swift */,
+				0BA774202735DA6E00964CFF /* NewsListCell.swift */,
+				0BA7741727332D2C00964CFF /* ArticleDetailScreen.swift */,
+				0BA7741E2735D52C00964CFF /* ArticleInfoScreen.swift */,
+				0BA774222735DB2600964CFF /* Extensions */,
 				0BA56E15271ABFE700E0B22C /* Preview Content */,
 			);
 			path = OtusHomework2;
@@ -65,6 +93,21 @@
 				0BA56E16271ABFE700E0B22C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0BA56E23271E02A100E0B22C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0BA774222735DB2600964CFF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0BA774152733279A00964CFF /* Array+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +126,11 @@
 			dependencies = (
 			);
 			name = OtusHomework2;
+			packageProductDependencies = (
+				0BA56E24271E02A100E0B22C /* OtusHomework2UI */,
+				0BA7741327328DDE00964CFF /* Networking */,
+				0BA7741A273472B900964CFF /* SDWebImageSwiftUI */,
+			);
 			productName = OtusHomework2;
 			productReference = 0BA56E0C271ABFE300E0B22C /* OtusHomework2.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +159,9 @@
 				Base,
 			);
 			mainGroup = 0BA56E03271ABFE300E0B22C;
+			packageReferences = (
+				0BA77419273472B900964CFF /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 0BA56E0D271ABFE300E0B22C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +177,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BA56E17271ABFE700E0B22C /* Preview Assets.xcassets in Resources */,
-				0BA56E14271ABFE700E0B22C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +189,12 @@
 			files = (
 				0BA56E12271ABFE300E0B22C /* ContentView.swift in Sources */,
 				0BA56E10271ABFE300E0B22C /* OtusHomework2App.swift in Sources */,
+				0BA7741D273474AE00964CFF /* NewsScreenViewModel.swift in Sources */,
+				0BF66CFE2729D863007D61AC /* NewsScreen.swift in Sources */,
+				0BA7741827332D2C00964CFF /* ArticleDetailScreen.swift in Sources */,
+				0BA774212735DA6E00964CFF /* NewsListCell.swift in Sources */,
+				0BA7741F2735D52C00964CFF /* ArticleInfoScreen.swift in Sources */,
+				0BA774162733279A00964CFF /* Array+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +397,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0BA77419273472B900964CFF /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0BA56E24271E02A100E0B22C /* OtusHomework2UI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OtusHomework2UI;
+		};
+		0BA7741327328DDE00964CFF /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
+		};
+		0BA7741A273472B900964CFF /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BA77419273472B900964CFF /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0BA56E04271ABFE300E0B22C /* Project object */;
 }
