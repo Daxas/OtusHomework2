@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import OtusHomework2UI
 
 struct ContentView: View {
     

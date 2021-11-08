@@ -15,8 +15,6 @@ struct NewsListCell: View {
     
     var article: Article
     
-    @State private var isCellAnimated = false
-    
     var body: some View {
         NavPushButton(destination: ArticleDetailScreen(article: article)) {
             buttonContent

@@ -18,6 +18,9 @@
 		0BA7741D273474AE00964CFF /* NewsScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA7741C273474AE00964CFF /* NewsScreenViewModel.swift */; };
 		0BA7741F2735D52C00964CFF /* ArticleInfoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA7741E2735D52C00964CFF /* ArticleInfoScreen.swift */; };
 		0BA774212735DA6E00964CFF /* NewsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA774202735DA6E00964CFF /* NewsListCell.swift */; };
+		0BA774262737DFCB00964CFF /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA774252737DFCB00964CFF /* ServiceLocator.swift */; };
+		0BA774282737E02F00964CFF /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA774272737E02F00964CFF /* Configurator.swift */; };
+		0BA7742A2737E66F00964CFF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA774292737E66F00964CFF /* NetworkService.swift */; };
 		0BF66CFE2729D863007D61AC /* NewsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF66CFD2729D863007D61AC /* NewsScreen.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +37,9 @@
 		0BA7741E2735D52C00964CFF /* ArticleInfoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleInfoScreen.swift; sourceTree = "<group>"; };
 		0BA774202735DA6E00964CFF /* NewsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListCell.swift; sourceTree = "<group>"; };
 		0BA7742427371CD500964CFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0BA774252737DFCB00964CFF /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		0BA774272737E02F00964CFF /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
+		0BA774292737E66F00964CFF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		0BF66CFD2729D863007D61AC /* NewsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +89,9 @@
 				0BA7741E2735D52C00964CFF /* ArticleInfoScreen.swift */,
 				0BA774222735DB2600964CFF /* Extensions */,
 				0BA56E15271ABFE700E0B22C /* Preview Content */,
+				0BA774252737DFCB00964CFF /* ServiceLocator.swift */,
+				0BA774272737E02F00964CFF /* Configurator.swift */,
+				0BA774292737E66F00964CFF /* NetworkService.swift */,
 			);
 			path = OtusHomework2;
 			sourceTree = "<group>";
@@ -187,6 +196,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BA7742A2737E66F00964CFF /* NetworkService.swift in Sources */,
+				0BA774262737DFCB00964CFF /* ServiceLocator.swift in Sources */,
 				0BA56E12271ABFE300E0B22C /* ContentView.swift in Sources */,
 				0BA56E10271ABFE300E0B22C /* OtusHomework2App.swift in Sources */,
 				0BA7741D273474AE00964CFF /* NewsScreenViewModel.swift in Sources */,
@@ -194,6 +205,7 @@
 				0BA7741827332D2C00964CFF /* ArticleDetailScreen.swift in Sources */,
 				0BA774212735DA6E00964CFF /* NewsListCell.swift in Sources */,
 				0BA7741F2735D52C00964CFF /* ArticleInfoScreen.swift in Sources */,
+				0BA774282737E02F00964CFF /* Configurator.swift in Sources */,
 				0BA774162733279A00964CFF /* Array+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
