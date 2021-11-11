@@ -21,6 +21,7 @@
 		0BA774262737DFCB00964CFF /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA774252737DFCB00964CFF /* ServiceLocator.swift */; };
 		0BA774282737E02F00964CFF /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA774272737E02F00964CFF /* Configurator.swift */; };
 		0BA7742A2737E66F00964CFF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA774292737E66F00964CFF /* NetworkService.swift */; };
+		0BBC7837273D2A3D00CC21B8 /* InjectWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBC7836273D2A3D00CC21B8 /* InjectWrapper.swift */; };
 		0BF66CFE2729D863007D61AC /* NewsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF66CFD2729D863007D61AC /* NewsScreen.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		0BA774252737DFCB00964CFF /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
 		0BA774272737E02F00964CFF /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
 		0BA774292737E66F00964CFF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		0BBC7836273D2A3D00CC21B8 /* InjectWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectWrapper.swift; sourceTree = "<group>"; };
 		0BF66CFD2729D863007D61AC /* NewsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 				0BA56E15271ABFE700E0B22C /* Preview Content */,
 				0BA774252737DFCB00964CFF /* ServiceLocator.swift */,
 				0BA774272737E02F00964CFF /* Configurator.swift */,
+				0BBC7836273D2A3D00CC21B8 /* InjectWrapper.swift */,
 				0BA774292737E66F00964CFF /* NetworkService.swift */,
 			);
 			path = OtusHomework2;
@@ -204,6 +207,7 @@
 				0BF66CFE2729D863007D61AC /* NewsScreen.swift in Sources */,
 				0BA7741827332D2C00964CFF /* ArticleDetailScreen.swift in Sources */,
 				0BA774212735DA6E00964CFF /* NewsListCell.swift in Sources */,
+				0BBC7837273D2A3D00CC21B8 /* InjectWrapper.swift in Sources */,
 				0BA7741F2735D52C00964CFF /* ArticleInfoScreen.swift in Sources */,
 				0BA774282737E02F00964CFF /* Configurator.swift in Sources */,
 				0BA774162733279A00964CFF /* Array+.swift in Sources */,

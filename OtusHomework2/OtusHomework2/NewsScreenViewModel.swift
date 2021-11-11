@@ -10,6 +10,8 @@ import Networking
 
 final class NewsScreenViewModel: ObservableObject {
     
+    @Injected var networkService: NetworkService?
+    
     @Published var newsList: [Article] = .init()
     
     @Published var page: Int = 0
@@ -20,6 +22,7 @@ final class NewsScreenViewModel: ObservableObject {
     init(topic: String, startDate: String) {
         self.topic = topic
         self.startDate = startDate
+        
         loadPage()
     }
     
@@ -31,19 +34,16 @@ final class NewsScreenViewModel: ObservableObject {
         
         isPageLoading = true
         page += 1
-        ArticlesAPI.everythingGet(q: self.topic,
-                                  from: self.startDate,
-                                  sortBy: "publishedAt",
-                                  language: "ru",
-                                  apiKey: "a59e5f24831a4322b535578654582973",
-                                  page: page) { list, error in
+        
+        networkService?.loadNewsPage(page: page,
+                              topic: self.topic,
+                              fromDate: self.startDate,
+                              completion: { list, error in
             self.newsList.append(contentsOf: list?.articles ?? [])
             if let totalResults = list?.totalResults {
                 self.totalResults = totalResults
             }
             self.isPageLoading = false
-        }
+        })
     }
-    
-    
 }
