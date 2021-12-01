@@ -46,26 +46,42 @@ struct NewsScreen: View {
     }
     
     private static let newsTopics = ["Moscow", "VR", "Tesla"]
-    private static let startDate = "2021-11-01"
+    private static let startDate = "2021-12-01"
     
     var firstList: some View {
         List(firstNewsModel.newsList) { item in
-            NewsListCell(article: item)
-                .environmentObject(firstNewsModel)
+            NavPushButton(destination: ArticleDetailScreen(article: item)) {
+                NewsListCell(newsTitle: item.title, isPageLoading: (firstNewsModel.newsList.isLast(item) && firstNewsModel.isPageLoading)) .onAppear() {
+                    if firstNewsModel.newsList.isLast(item) {
+                        firstNewsModel.loadPage()
+                    }
+                }
+            }
         }
     }
     
     var secondList: some View {
         List(secondNewsModel.newsList) { item in
-            NewsListCell(article: item)
-                .environmentObject(secondNewsModel)
+            NavPushButton(destination: ArticleDetailScreen(article: item)) {
+                NewsListCell(newsTitle: item.title, isPageLoading: (secondNewsModel.newsList.isLast(item) && secondNewsModel.isPageLoading))
+                    .onAppear() {
+                        if secondNewsModel.newsList.isLast(item) {
+                            secondNewsModel.loadPage()
+                        }
+                    }
+            }
         }
     }
     
     var thirdList: some View {
         List(thirdNewsModel.newsList) { item in
-            NewsListCell(article: item)
-                .environmentObject(thirdNewsModel)
+            NavPushButton(destination: ArticleDetailScreen(article: item)) {
+                NewsListCell(newsTitle: item.title, isPageLoading: (thirdNewsModel.newsList.isLast(item) && thirdNewsModel.isPageLoading)) .onAppear() {
+                    if thirdNewsModel.newsList.isLast(item) {
+                        thirdNewsModel.loadPage()
+                    }
+                }
+            }
         }
     }
     
