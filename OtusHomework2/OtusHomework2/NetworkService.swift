@@ -20,6 +20,7 @@ class NetworkService: NetworkServiceProtocol {
                                   sortBy: "publishedAt",
                                   language: "ru",
                                   apiKey: "a59e5f24831a4322b535578654582973",
+                                  page: page,
                                   completion: completion)
     }
     

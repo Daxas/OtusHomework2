@@ -17,5 +17,6 @@ class Configurator {
     
    private func registerServices() {
        serviceLocator.addService(service: NetworkService())
+       serviceLocator.addService(service: RepositoryService())
     }
 }

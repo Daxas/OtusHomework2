@@ -11,6 +11,7 @@ import Networking
 final class NewsScreenViewModel: ObservableObject {
     
     @Injected var networkService: NetworkService?
+    @Injected var repositoryService: RepositoryService?
     
     @Published var newsList: [Article] = .init()
     
@@ -22,8 +23,6 @@ final class NewsScreenViewModel: ObservableObject {
     init(topic: String, startDate: String) {
         self.topic = topic
         self.startDate = startDate
-        
-        loadPage()
     }
     
     private let topic: String
@@ -45,5 +44,21 @@ final class NewsScreenViewModel: ObservableObject {
             }
             self.isPageLoading = false
         })
+    }
+    
+    func saveData(news: [Article]) {
+        let preparedNews = news.map { article in
+            ArticleEntity(author: article.author,
+                          title: article.title,
+                          text: article.description,
+                          url: article.url,
+                          urlToImage: article.urlToImage,
+                          publishedAt: article.publishedAt,
+                          content: article.content)
+        }
+        preparedNews.forEach { article in
+            repositoryService?.saveArticle(article: article)
+            
+        }
     }
 }

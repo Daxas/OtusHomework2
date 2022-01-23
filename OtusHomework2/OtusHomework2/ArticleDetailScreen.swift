@@ -1,6 +1,5 @@
 //
 //  ArticleDetailScreen.swift
-//  OtusHomework2
 //
 //  Created by Daria.S on 03.11.2021.
 //
@@ -12,11 +11,11 @@ import SDWebImageSwiftUI
 
 struct ArticleDetailScreen: View {
     
-    private let article: Article
-    
     init(article: Article) {
         self.article = article
     }
+    
+    private let article: Article
     
     var body: some View {
         ScrollView {
